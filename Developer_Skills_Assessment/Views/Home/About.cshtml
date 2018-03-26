@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h1>Data Assessments</h1>
+<hr />
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <span>Assesment #1</span>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="alert alert-info"><span>Find and correct the bug(s) preventing the search from working correctly.</span></div>
+                            <div class="info">The "Search" button should retreive all students with a last name equal to what was typed into the textbox.</div>
+                            <div class="pull-right">
+                                <input id="studentLastName" type="text" />
+                                <a class="btn btn-primary" onclick="SetStudentsTableContent()">Search</a>
+                            </div>
+                            <br />
+                            <table id="studentTable" class="table table-striped table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <span>Assesment #2</span>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="alert alert-info"><span>Implement any new server-side/client-side features needed to fullfill the request.</span></div>
+                            <div class="info">
+                                <p>The "Search" button should retreive all students with an id equal to what was entered into the textbox.</p>
+                                <p>The textbox should not allow null entries or non-numeric (i.e. use validation)</p>
+                            </div>
+                            <div class="pull-right">
+                                <input id="studentId"/>
+                                <a class="btn btn-primary">Search</a>
+                            </div>
+                            <br />
+                            <table id="studentTableById" class="table table-striped table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br />
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <span>Assessment #3</span>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="alert alert-info">
+                In this assessment you will be asked to create multiple UI elelments to feed the post back to the correct controller with propper data.
+                <p>Add Code in this section to render a form for creating a new Student.</p>
+                <p>Add a button to submit the form using a post methd. Use the Non-Api Students controller methods for posting/adding/redirecting.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
