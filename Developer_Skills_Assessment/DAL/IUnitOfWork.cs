@@ -11,6 +11,8 @@ namespace Developer_Skills_Assessment.DAL
     {
         IStudentRepository Students { get; }
         ICourseRepository Courses { get; }
+        IStudentCourseRepository StudentCourses { get; }
+
         int Complete();
     }
 }

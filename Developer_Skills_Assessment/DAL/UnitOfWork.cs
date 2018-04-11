@@ -16,9 +16,11 @@ namespace Developer_Skills_Assessment.DAL
             _context = context;
             Students = new StudentRepository(_context);
             Courses = new CourseRepository(_context);
+            StudentCourses = new StudentCourseRepository(_context);
         }
         public IStudentRepository Students { get; private set; }
         public ICourseRepository Courses { get; private set; }
+        public IStudentCourseRepository StudentCourses { get; private set; }
 
         public int Complete()
         {

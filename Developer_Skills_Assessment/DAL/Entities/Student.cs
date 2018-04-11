@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Developer_Skills_Assessment.DAL.Entities
 {
-    public class Students
+    public class Student
     {
         
         public int Id { get; set; }

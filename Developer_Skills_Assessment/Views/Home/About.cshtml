@@ -53,8 +53,8 @@
                                 <p>The textbox should not allow null entries or non-numeric (i.e. use validation)</p>
                             </div>
                             <div class="pull-right">
-                                <input id="studentId"/>
-                                <a class="btn btn-primary">Search</a>
+                                <input id="studentId" />
+                                <a onclick="SetStudentsTableContentById()" class="btn btn-primary">Search</a>
                             </div>
                             <br />
                             <table id="studentTableById" class="table table-striped table-responsive">
@@ -72,7 +72,7 @@
             </div>
         </div>
     </div>
-<br />
+    <br />
     <div class="panel panel-primary">
         <div class="panel-heading">
             <div class="panel-title">
@@ -81,11 +81,45 @@
         </div>
         <div class="panel-body">
             <div class="alert alert-info">
-                In this assessment you will be asked to create multiple UI elelments to feed the post back to the correct controller with propper data.
-                <p>Add Code in this section to render a form for creating a new Student.</p>
-                <p>Add a button to submit the form using a post methd. Use the Non-Api Students controller methods for posting/adding/redirecting.</p>
+                <p>In this assessment you will be asked to create multiple UI elelments to feed the post back to the correct controller with propper data.</p>
             </div>
-
+            <p>Add Code in this section to render form controls for assigning a Student to a Course.</p>
+            <p>Add a button to submit the form using a post methd. Use the Non-Api StudentCourses controller for posting/adding/redirecting.</p>
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*@await Component.InvokeAsync("StudentCoursesCreator")*@

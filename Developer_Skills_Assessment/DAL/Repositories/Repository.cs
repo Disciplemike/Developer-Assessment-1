@@ -31,6 +31,10 @@ namespace Developer_Skills_Assessment.DAL.Repositories
             return Context.Set<TEntity>().Find(id);
         }
 
+        public TEntity Find(params object[] keyValues)
+        {
+            return Context.Set<TEntity>().Find(keyValues);
+        }
 
         public IEnumerable<TEntity> GetAll()
         {

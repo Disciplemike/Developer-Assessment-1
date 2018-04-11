@@ -28,13 +28,13 @@ namespace Developer_Skills_Assessment.Controllers.API
         public IActionResult Find(int id)
         {
             //Implement code to retrieve student here
+            return Json(new { });
 
-            return Json(new { }); //Update Return to include the student
         }
 
         public IActionResult ByLastName(string lastName = "")
         {
-            var data = new List<Students>();
+            var data = new List<Student>();
             if (!String.IsNullOrWhiteSpace(lastName))
             {
                 data = _unitOfWork.Students.GetStudentsByLastName(lastName).ToList();

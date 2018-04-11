@@ -37,7 +37,7 @@ namespace Developer_Skills_Assessment.Controllers
         {
             if (ModelState.IsValid)
             {
-                var student = new Students()
+                var student = new Student()
                 {
                     FirstName = model.FirstName,
                     LastName = model.LastName

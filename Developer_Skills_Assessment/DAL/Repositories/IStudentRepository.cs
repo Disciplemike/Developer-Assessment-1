@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Developer_Skills_Assessment.DAL.Repositories
 {
-    public interface IStudentRepository : IRepository<Students>
+    public interface IStudentRepository : IRepository<Student>
     {
-        IEnumerable<Students> GetStudentsByLastName(string lastName);
+        IEnumerable<Student> GetStudentsByLastName(string lastName);
     }
 }

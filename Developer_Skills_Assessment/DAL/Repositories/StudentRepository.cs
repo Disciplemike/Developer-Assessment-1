@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Developer_Skills_Assessment.DAL.Repositories
 {
-    public class StudentRepository : Repository<Students>, IStudentRepository
+    public class StudentRepository : Repository<Student>, IStudentRepository
     {
 
         public StudentRepository(SchoolDbContext context)
@@ -23,7 +23,7 @@ namespace Developer_Skills_Assessment.DAL.Repositories
             }
         }
 
-        public IEnumerable<Students> GetStudentsByLastName(string lastName)
+        public IEnumerable<Student> GetStudentsByLastName(string lastName)
         {
             return SchoolContext.Students.Where(s => s.LastName.ToLower() == lastName.ToLower());
         }

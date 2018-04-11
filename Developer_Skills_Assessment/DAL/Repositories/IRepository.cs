@@ -9,6 +9,7 @@ namespace Developer_Skills_Assessment.DAL.Repositories
     public interface IRepository<TEntity> where TEntity : class
     {
         TEntity Find(int id);
+        TEntity Find(params Object[] keyValues);
         IEnumerable<TEntity> GetAll();
 
 

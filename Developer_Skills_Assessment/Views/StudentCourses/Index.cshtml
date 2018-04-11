@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Developer_Skills_Assessment.Models.StudentCourseViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CourseTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StudentFirstName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StudentLastName)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentLastName)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

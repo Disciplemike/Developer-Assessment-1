@@ -13,7 +13,7 @@ namespace Developer_Skills_Assessment.DAL
         public SchoolDbContext(DbContextOptions<SchoolDbContext> options)
             : base(options){ }
 
-            public DbSet<Students> Students { get; set; }
+            public DbSet<Student> Students { get; set; }
             public DbSet<Course> Courses { get; set; }
         public DbSet<StudentCourse> StudentCourses { get; set; }
 
